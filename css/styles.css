@@ -1,0 +1,305 @@
+/* background: #000666; */
+/* General styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  background: whitesmoke;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+.container {
+  width: 85%;
+  margin: 0px auto; /* center block */
+}
+
+/* HEADER */
+#main-header {
+  background: whitesmoke;
+  height: 100px;
+  line-height: 80px;
+}
+
+#logo {
+  width: 65%;
+  float: left;
+}
+
+#logo h1 {
+  font-weight: bold;
+  font-size: 25px;
+  color: #000666;   
+}
+
+#menu {
+  width: 480px;
+  float: right;
+}
+
+#menu ul li {
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#menu ul li a {
+  color: black;
+}
+
+#menu ul li a:hover{
+  color: #FF471A;
+}
+
+/* SLIDER */
+#slider {
+  height: 300px;
+  background: #000666;
+}
+
+#slider h2 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  line-height: 290px;
+  text-shadow: 0px 0px 12px black;
+}
+
+/* SERVICES */
+.subheader {
+  font-size: 34px;
+  color: #333;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #FF471A;
+}
+
+.service {
+  width: 25%;
+  text-align: center;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.service img {
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+.service p, .video p {
+  color: #444;
+  text-align: center;
+  display: block;
+  width: 85%;
+  margin: 0px auto;
+}
+
+.video {
+  width: 33%;
+  text-align: center;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.video iframe {
+  width: 80%;
+  height: 240px;
+}
+
+/* FOOTER */
+footer {
+  background: #333;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+footer .subheader {
+  color: whitesmoke;
+}
+
+#networks {
+  display: block;
+  width: 220px;
+  margin: 0px auto;
+  list-style: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#networks li {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: all 300ms;
+}
+
+#networks li:hover {
+  opacity: 0.75;
+  transform: scale(1.25, 1.25);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1614px) {  
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1644px) {
+  #main-header {
+    height: 70px;
+    line-height: 65px;
+  }
+
+  #logo {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1264px) {
+  #menu {
+    width: 50%;
+    float: right;
+  }
+}
+
+@media (max-width: 999px) {
+  #logo {
+    width: 227px;
+    float: none;
+    margin: 0px auto;
+  }
+
+  #logo h1 {
+    text-align: center;
+  }
+
+  #menu {
+    float: none;
+    margin: 0px auto;
+  }
+
+  #slider {
+    overflow: hidden;
+    height: 150px;
+  }
+
+  #slider h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 953px) {
+  #menu {
+    width: fit-content;
+    float: none;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .service {
+    width: 70%;
+    float: none;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .video {
+    width: 70%;
+    float: none;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .service p, .video p {
+    margin-top: 10px;
+  }
+
+  .video iframe {
+    width: 100%;
+    height: 240px;
+  }
+}
+
+@media (max-width: 460px) {
+  #slider h2 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 50px;
+  }
+
+  .video {
+    width: 90%;
+    float: none;
+  }
+}
+
+@media (max-width: 594px) {
+  #menu {
+    width: 100%;
+    /* text-align: center; */
+  }
+
+  #menu ul li {
+    list-style: none;
+    float: left;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+@media (max-width: 377px) {
+  #menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  #menu ul li {
+    list-style: none;
+    float: left;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  #slider h2 {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 345px) {
+  #main-header {
+    height: auto;
+  }
+
+  #menu ul li {
+    float: none;
+  }
+}
